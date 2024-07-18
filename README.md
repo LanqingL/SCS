@@ -1,5 +1,4 @@
-# Visual Prompt Selection for In-Context Learning Segmentation
-# [![Paper](assets/arxiv.svg)](https://arxiv.org/pdf/2404.10157.pdf) 
+# Visual Prompt Selection for In-Context Learning Segmentation [![Paper](assets/arxiv.svg)](https://arxiv.org/pdf/2404.10157.pdf) 
 This repository is the implementation of the paper, for more info about this work see [Project Page](https://arxiv.org/pdf/2404.10157.pdf). 
 
 <div align="center">
