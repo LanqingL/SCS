@@ -3,7 +3,7 @@
 This repository is the implementation of the paper, for more info about this work see [Project Page](https://arxiv.org/pdf/2404.10157.pdf). 
 
 <div align="center">
-  <img src="asset/model.png">
+  <img src="assets/model.png">
 </div>
 
 ## Abstract
