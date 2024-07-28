@@ -1,6 +1,5 @@
-# Visual Prompt Selection for In-Context Learning Segmentation
-# [![Paper](assets/arxiv.svg)](https://arxiv.org/pdf/2404.10157.pdf) 
-This repository is the implementation of the paper, for more info about this work see [Project Page](https://arxiv.org/pdf/2404.10157.pdf). 
+# Visual Prompt Selection for In-Context Learning Segmentation [![Paper](assets/arxiv.svg)](https://arxiv.org/pdf/2407.10233.pdf) 
+This repository is the implementation of the paper, for more info about this work see [Project Page](https://arxiv.org/pdf/2407.10233.pdf). 
 
 <div align="center">
   <img src="assets/model.png">
@@ -14,7 +13,7 @@ As a fundamental and extensively studied task in computer vision, image segmenta
 Our evaluation pipeline is based on [Volumetric Aggregation Transformer](https://github.com/Seokju-Cho/Volumetric-Aggregation-Transformer). Please follow the dataset preparation steps for PASCAL-5i dataset in this repository. 
 
 ## Prerequisites
-pytorch installation, set cudatoolkit to your cuda version or choose an installation using these [instructions](https://pytorch.org/get-started/previous-versions/#v18).
+Pytorch installation, set cudatoolkit to your cuda version or choose an installation using these [instructions](https://pytorch.org/get-started/previous-versions/#v18).
 ```
 conda install pytorch==1.9.0 torchvision==0.10.0 torchaudio==0.9.0 cudatoolkit=11.3 -c pytorch -c conda-forge
 ```
