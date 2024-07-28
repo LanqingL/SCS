@@ -1,5 +1,3 @@
-import os
-os.environ['CUDA_VISIBLE_DEVICES'] = "6"
 import argparse
 import random
 import torch
@@ -9,7 +7,7 @@ import albumentations as A
 from RL_base.model import policy_network
 from data.dataset import Compose, FSSDataset
 from RL_base.UTILS import prepare_save_vit_h5py, prepare_cluster_h5py
-from RL_base.learn_policy_contrastive_to_cluster_gumble import policy_gradient_train
+from RL_base.learn_policy import policy_gradient_train
 
 def parse_args():
     parser = argparse.ArgumentParser()

@@ -23,6 +23,35 @@ Other dependencies are provided in `requirements.txt`, install them by:
 pip install -r requirements.txt
 ```
 
+## Train:
+The following runs the training of visual prompt selection, noted that visual backbone was initialized with the weights of "vit_large_patch14_clip_224.laion2b_ft_in12k_in1k":
+
+```
+python train.py \
+      --model seggpt_vit_large_patch16_input896x448 \
+      --engine_ckpt_path <ICL_model_ckpt_path> \
+      --cluster_num <cluster_num> \
+      --sample_num <sample_num> \
+      --fold <data_fold> \
+      --BENCHMARK <dataset_name> \
+      --output_root <outputs_dir> 
+```
+
+## Inference
+
+```
+python test.py \
+      --model seggpt_vit_large_patch16_input896x448 \
+      --engine_ckpt_path <ICL_model_ckpt_path> \
+      --cluster_num <cluster_num> \
+      --shot <prompt_num> \
+      --fold <data_fold> \
+      --BENCHMARK <dataset_name> \
+      --output_root <outputs_dir> \
+      --ckpt_projector_path <project_ckpt_relative_path> \
+      --ckpt_predictor_path <predictor_ckpt_relative_path> 
+```
+
 ## Citations
 
 If you found our work useful, please consider citing our paper:
