@@ -70,13 +70,14 @@ class DatasetPASCAL(Dataset):
             support_mask, support_ignore_idx = self.extract_ignore_idx(scmask, class_sample)
             support_masks.append(support_mask)
             support_ignore_idxs.append(support_ignore_idx)
-            
+
 
         batch = {'query_img': query_img,
                  'query_mask': query_mask,
                  'query_name': query_name,
                  'query_ignore_idx': query_ignore_idx,
                  'org_query_imsize': org_qry_imsize,
+
                  'support_imgs': support_imgs,
                  'support_masks': support_masks,
                  'support_names': support_names,
@@ -158,7 +159,7 @@ class DatasetPASCAL(Dataset):
         print('Total (%s) images are : %d' % (self.split, len(img_metadata)))
 
         if os.path.exists("../data/splits/pascal/%s/fold%d_ins.json" % (self.split, self.fold)):
-            with open("../data/splits/pascal/%s/fold%d_ins.json"%(self.split, self.fold), 'r', encoding='utf-8') as fp:
+            with open("../data/splits/pascal/%s/fold%d_ins.json" % (self.split, self.fold), 'r', encoding='utf-8') as fp:
                 img_metadata = json.load(fp)
         else:
             all_instance = os.listdir('../datasets/pascal-5i/VOC2012/SegmentationObject')
@@ -168,13 +169,10 @@ class DatasetPASCAL(Dataset):
                 if metadata[0] in all_instance:
                     query_image = os.path.join(self.img_path, metadata[0]) + '.jpg'
                     query_cmask = Image.open(os.path.join(self.ann_path, metadata[0]) + '.png')
-                    query_mask, query_ignore_idx = new_extract_ignore_idx(query_image, query_cmask, metadata[1],
-                                                                          purple=False)
+                    query_mask, query_ignore_idx = new_extract_ignore_idx(query_image, query_cmask, metadata[1], purple=False)
                     query_mask = query_mask.convert('RGB')
                     query_mask = np.array(query_mask)
-                    query_ins_cmask = Image.open(
-                        os.path.join('../datasets/pascal-5i/VOC2012/SegmentationObject',
-                                     metadata[0]) + '.png')
+                    query_ins_cmask = Image.open(os.path.join('../datasets/pascal-5i/VOC2012/SegmentationObject', metadata[0]) + '.png')
                     query_ins_cmaskr = query_ins_cmask.convert('RGB')
                     query_ins_cmaskr = np.array(query_ins_cmaskr)
 
