@@ -65,7 +65,7 @@ If you found our work useful, please consider citing our paper:
 ```
 
 ## Acknowledgement
-[visual_prompting](https://github.com/amirbar/visual_prompting), [SegGPT](https://github.com/baaivision/Painter/tree/main/SegGPT), [SAM](https://github.com/facebookresearch/segment-anything), [Matcher](https://github.com/aim-uofa/Matcher), [Personalize-SAM](https://github.com/ZrrSkywalker/Personalize-SAM).
+[visual_prompting](https://github.com/amirbar/visual_prompting), [SegGPT](https://github.com/baaivision/Painter/tree/main/SegGPT), [SAM](https://github.com/facebookresearch/segment-anything), [Matcher](https://github.com/aim-uofa/Matcher) and [Personalize-SAM](https://github.com/ZrrSkywalker/Personalize-SAM).
 
 ## License
 
