@@ -64,6 +64,9 @@ If you found our work useful, please consider citing our paper:
 }
 ```
 
+## Acknowledgement
+[visual_prompting](https://github.com/amirbar/visual_prompting), [SegGPT](https://github.com/baaivision/Painter/tree/main/SegGPT), [SAM](https://github.com/facebookresearch/segment-anything), [Matcher](https://github.com/aim-uofa/Matcher), [Personalize-SAM](https://github.com/ZrrSkywalker/Personalize-SAM).
+
 ## License
 
 This project is licensed under the terms of the [Apache 2.0](LICENSE) open source license. Please refer to [LICENSE](LICENSE) for the full terms.
