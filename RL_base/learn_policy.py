@@ -232,7 +232,7 @@ def get_batch_reward_loss(scores, query_name, support_names, class_sample, model
         ALL_IOU = []
 
         mean_iou = 0
-        for cid in range(len(cids)):
+        for cid in cids:
             sin_support_image, sin_support_masks = support_image[cid], support_masks[cid]
             query_image_name, sin_support_image = query_image, sin_support_image
             output_image_mask, output, _, _ = inference_image(model, device, query_image_name,
